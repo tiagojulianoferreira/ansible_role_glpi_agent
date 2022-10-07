@@ -1,7 +1,7 @@
 glpi-agent
 =========
 
-Instala o GLPI Agent em sistemas Linux e ~~Windows~ (ainda não implementado).
+Instala o GLPI Agent em sistemas Linux e ~~Windows~~ (ainda não implementado).
 
 Requirements
 ------------
