@@ -31,6 +31,7 @@ TO DO
 
 - [x] Instala agentes em hosts Linux usando Perl
 - [ ] Instala agentes em hosts Windows
+- [ ] Estudar alternativas para o módulo shell (idempotência)
   
 License
 -------
