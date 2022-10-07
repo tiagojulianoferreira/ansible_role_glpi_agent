@@ -1,17 +1,17 @@
 glpi-agent
 =========
 
-Instala o GLPI Agent em sistemas Linux e Windows (ainda não implementado).
+Instala o GLPI Agent em sistemas Linux e ~~Windows~ (ainda não implementado).
 
 Requirements
 ------------
 
-- Conexões SSH(Linux) e WinRM(Windows)
+- Conexões SSH(Linux) e ~~WinRM(Windows)~~
 
 Role Variables
 --------------
 
-Em **default/main.yml** é necessário cadastrar as variáveis **perl_url_glpi_agent** e **glpi_agent_version**
+Em **default/main.yml** é necessário cadastrar as variáveis **perl_url_glpi_agent**, **glpi_agent_version** e **server** (API Server do GLPI)
 
 Dependencies
 ------------
