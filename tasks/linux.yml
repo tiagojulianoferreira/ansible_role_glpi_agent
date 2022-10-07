@@ -5,13 +5,13 @@
     mode: '0774'
   register: glpi_agent_download
 
-- debug: 
-    msg: "{{ glpi_agent_download }}"
+# - debug: 
+#     msg: "{{ glpi_agent_download }}"
 
 - name: Garante agente instalado e server configurado
   ansible.builtin.shell: 
     chdir: /root
-    cmd: 'perl glpi-agent-{{ glpi_agent_version }}-linux-installer.pl --server=https://glpi.ifsc.edu.br/front/inventory.php'
+    cmd: 'perl glpi-agent-{{ glpi_agent_version }}-linux-installer.pl --server={{ server }}'
   register: glpi_agent_install
 
 - debug: 
