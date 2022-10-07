@@ -1,16 +1,16 @@
 - name: Download Linux Perl Installer
   ansible.builtin.get_url:
     url: "{{ perl_url_glpi_agent }}"
-    dest: /root
+    dest: ~/
     mode: '0774'
   register: glpi_agent_download
-
-# - debug: 
-#     msg: "{{ glpi_agent_download }}"
+  
+- debug: 
+    msg: "{{ glpi_agent_download.dest }}"
 
 - name: Garante agente instalado e server configurado
   ansible.builtin.shell: 
-    chdir: /root
+    chdir: ~/
     cmd: 'perl glpi-agent-{{ glpi_agent_version }}-linux-installer.pl --server={{ server }}'
   register: glpi_agent_install
 
