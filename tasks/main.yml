@@ -1,0 +1,4 @@
+---
+# tasks file for glpi-agent
+- name: "Garante a instalação e configuração do GLPI-Agent em {{ ansible_system }}"
+  include_tasks: "{{ ansible_system|lower }}.yml"
