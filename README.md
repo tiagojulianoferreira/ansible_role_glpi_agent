@@ -25,7 +25,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       roles:
-         - glpi-agent
+         - ansible_role_glpi_agent
 
 TO DO
 
